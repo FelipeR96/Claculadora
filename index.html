@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <section class="contCalculadora">
+        <div class="pantalla">
+            <input type="text" readonly class="inputpantalla" id="display">
+        </div>
+    
+        <div class="teclas">
+            <input type="button" value="OFF" onclick="apagar_prender()"> 
+            <input type="button" value="MRC" onclick="mostrar()">
+            <input type="button" value="M-" onclick="mostrar()">
+            <input type="button" value="M+" onclick="mostrar()" > 
+            <input type="button" value="/" onclick="mostrar('/')">
+
+            <input type="button" value="%" onclick="mostrar('%')">
+            <input type="button" value="7" onclick="mostrar('7')">
+            <input type="button" value="8" onclick="mostrar('8')">
+            <input type="button" value="9" onclick="mostrar('9')">
+            <input type="button" value="*" onclick="mostrar('*')">
+
+            <input type="button" value="R" onclick="mostrar()">
+            <input type="button" value="4" onclick="mostrar('4')">
+            <input type="button" value="5" onclick="mostrar('5')">
+            <input type="button" value="6" onclick="mostrar('6')">
+            <input type="button" value="-" onclick="mostrar('-')">
+
+            <input type="button" value="C" onclick="borrar()">
+            <input type="button" value="1" onclick="mostrar('1')">
+            <input type="button" value="2" onclick="mostrar('2')">
+            <input type="button" value="3" onclick="mostrar('3')">
+            <input type="button" value="+" onclick="mostrar('+')">
+            
+            <input type="button" value="AC" onclick="mostrar()">
+            <input type="button" value="0" onclick="mostrar('0')">
+            <input type="button" value="." onclick="mostrar('.')">
+            <input type="button" value="=" onclick="calcular()">
+        </div>
+    </section>
+    
+</body>
+</html>

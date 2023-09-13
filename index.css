@@ -1,0 +1,54 @@
+body{
+    background: #000a;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.pantalla{
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+
+
+.inputpantalla{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+.contCalculadora{
+    height: 400px;
+    width: 300px;
+    background: #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:15px 15px;
+    
+}
+
+.teclas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="button"]{
+    border-radius: 5px;
+    font-weight: 700;
+}
+input[type="button"]:nth-child(20){
+    grid-row: 4/6;
+    grid-column: 5/6;
+    background: #06f;
+}
